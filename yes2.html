@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yes.css">
+    <title>YES OR NO</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="content">
+            <div class="question">Хорошо я в тебе не сомневался. <br> Главный вопрос вернешь ли ты мне кейс?</div>
+            <div class="buttons">
+                <a href="" class="button-6" id="yes">YES</a>
+                <a href="" class="button-6" id="no">NO</a> 
+            </div>
+        </div>
+    </div>
+ <style>
+    .buttons {
+        padding-left: 200px;
+    }
+ </style>
+  <script>
+    const noButton = document.getElementById('no');
+    
+    noButton.addEventListener('mouseover', function() {
+        const maxWidth = window.innerWidth - noButton.offsetWidth;
+        const maxHeight = window.innerHeight - noButton.offsetHeight;
+        
+        const randomX = Math.floor(Math.random() * maxWidth);
+        const randomY = Math.floor(Math.random() * maxHeight);
+        
+        noButton.style.left = randomX + 'px';
+        noButton.style.top = randomY + 'px';
+        noButton.style.position = 'absolute';
+    });
+</script>
+</body>
+</html>
+    
+</body>
+</html>
