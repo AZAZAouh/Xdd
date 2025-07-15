@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRATULACJE</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f8fafc, #e0f7fa);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .gratulacje {
+      font-size: 8vw;
+      font-weight: 800;
+      color: #2E8B57;
+      text-shadow: 0 4px 6px rgba(0,0,0,0.1),
+                   0 1px 3px rgba(0,0,0,0.2);
+      animation: pop 1s ease-out forwards;
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    @keyframes pop {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gratulacje">GRATULACJE</div>
+</body>
+</html>
